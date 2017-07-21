@@ -341,7 +341,7 @@ function funcRowBox(object) {
 					break;
 				case "RowBox":
 					document.getElementById("main").innerHTML = "";
-					document.getElementById("error").innerHTML = "Please enter either TextBox, StyleBox, TogglerButtonBox, CheckBox or PaneSelectorBox in the contents section. RowBox is not accepted.";
+					document.getElementById("error").innerHTML = "Please enter either TextBox, StyleBox, TogglerButtonBox, CheckBox or PaneSelectorBox in the contents section. RowBox is not accepted inside a RowBox.";
 					break;
 				}
 			}
