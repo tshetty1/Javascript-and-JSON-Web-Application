@@ -340,7 +340,8 @@ function funcRowBox(object) {
 					funcPaneSelectorBox(object.contents[i]);
 					break;
 				case "RowBox":
-					funcRowBox(object.contents[i]);
+					document.getElementById("main").innerHTML = "";
+					document.getElementById("error").innerHTML = "Please enter either TextBox, StyleBox, TogglerButtonBox, CheckBox or PaneSelectorBox in the contents section. RowBox is not accepted.";
 					break;
 				}
 			}
